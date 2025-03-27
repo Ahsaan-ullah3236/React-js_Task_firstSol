@@ -1,14 +1,12 @@
-ima
 import React from 'react';
+import Group from "../assets/Group.png"; 
 
 
 function LoginForm() {
   return (
     <div className="flex items-center justify-center min-h-screen  p-4">
       <div className="w-full max-w-sm p-4 bg-white shadow-lg rounded-xl border-2">
-        <img src="images" alt="Logo" />
-
-        <p className="text-gray-600 text-center mt-2">Lorem ipsum dolor sit amet</p>
+      <img src={Group} alt="Logo" width={250} className="mx-auto mb-4" />
 
         <form id="myForm" className="mt-24">
           <h5 className="text-left mb-0 font-semibold text-gray-600">Hi, welcome back! You've been missed</h5>
