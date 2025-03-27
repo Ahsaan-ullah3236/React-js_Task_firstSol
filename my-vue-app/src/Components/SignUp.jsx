@@ -26,7 +26,7 @@ function  SignUp() {
           </div>
 
           <div className="mb-4 text-left">
-            <label className="font-semibold text-gray-600 text-sm mb-1">Email </label>
+            <label className="font-semibold text-gray-600 text-sm mb-1" required>Email </label>
             <input
               type="text"
               className="w-full border-b-2 border-gray-300 focus:border-blue-500 outline-none py-1 px-1"
@@ -36,16 +36,20 @@ function  SignUp() {
             <label className="font-semibold text-gray-600 text-sm mb-1">Password </label>
             <input
               type="text"
-              className="w-full border-b-2 border-gray-300 focus:border-blue-500 outline-none py-1 px-1"
+              className="w-full border-b-2 border-gray-300 focus:border-blue-500 outline-none py-1 px-1 "required
             />
           </div>
           <div className="mb-4 text-left">
-            <label className="font-semibold text-gray-600 text-sm mb-1">Confirm Password </label>
-            <input
-              type="text"
-              className="w-full border-b-2 border-gray-300 focus:border-blue-500 outline-none py-1 px-1"
-            />
-          </div>
+           <label className="font-semibold text-gray-600 text-sm mb-1">
+           Confirm Password  
+      </label>
+       <input
+     type="password"
+     className="w-full border-b-2 border-gray-300 focus:border-blue-500 outline-none py-1 px-1"
+      required
+     />
+         </div>
+
           <button className="w-full mt-2 bg-[#D5BE76] text-white py-2 rounded-lg transition 
           border-2 border-transparent hover:border-blue-500 focus:border-blue-500">
          Sign Up
