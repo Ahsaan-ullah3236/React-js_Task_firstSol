@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
 import Group from "../assets/Group.png"; 
+
 
 
 function LoginForm() {
@@ -35,7 +37,7 @@ function LoginForm() {
 
           <button
             type="submit"
-            className="w-full mt-24  bg-[#D5BE76]  text-white py-2 rounded-lg hover:text-[#D5BE76]  transition duration-300"
+            className="w-full mt-24  bg-[#D5BE76]  text-white py-2 rounded-lg  transition duration-300"
           >
             Login
           </button>
@@ -43,9 +45,9 @@ function LoginForm() {
 
         <p className="text-center text-gray-500 mt-24">
           Don't have an account?
-          <a href="#" className="text-blue-500 hover:underline ml-1" aria-label="Sign Up">
-            Sign Up
-          </a>
+          <Link to="/SignUp" className="text-blue-500 hover:underline ml-1" >
+          Sign Up
+        </Link>
         </p>
       </div>
     </div>
