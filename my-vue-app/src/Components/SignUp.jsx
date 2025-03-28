@@ -64,8 +64,7 @@ function  SignUp() {
         Sign Up
      </Link>
          </p>
-
-
+        
         </form>
       </div>
     </div>
