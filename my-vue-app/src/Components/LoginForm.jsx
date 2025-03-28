@@ -6,7 +6,7 @@ import Group from "../assets/Group.png";
 
 function LoginForm() {
   return (
-    <div className="flex items-center justify-center min-h-screen  p-4">
+    <div className="flex items-center justify-center min-h-screen p-4">
       <div className="w-full max-w-sm p-4 bg-white shadow-lg rounded-xl border-2">
       <img src={Group} alt="Logo" width={250} className="mx-auto mb-4" />
 
@@ -18,7 +18,7 @@ function LoginForm() {
             id="email"
             placeholder="Username/Email"
             required
-            className="w-full px-4 py-2 mt-4 border rounded-lg focus:outline-none focus:ring-2 focus: text-[#D5BE76] "
+            className="w-full  py-2 mt-4 border-b-2 border-gray-400 focus:outline-none focus:border-blue-500 text-black "
           />
 
           <input
@@ -26,7 +26,7 @@ function LoginForm() {
             id="password"
             placeholder="Password"
             required
-            className="w-full px-4 py-2 mt-4 border rounded-lg focus:outline-none focus:ring-2 focus: text-[#D5BE76] "
+            className="w-full py-2 mt-4 border-b-2 border-gray-400 focus:outline-none focus:border-blue-500 text-black "
           />
 
           <div className="text-right mt-2">

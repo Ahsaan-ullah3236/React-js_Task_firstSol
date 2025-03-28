@@ -61,7 +61,7 @@ function SignUp() {
         <p className="text-center text-gray-500 mt-6">
           Already have an account?
           <Link to="/" className="text-[#D5BE76] hover:underline ml-1" aria-label="Sign In">
-            Sign in
+            Sign In
           </Link>
         </p>
       </div>
