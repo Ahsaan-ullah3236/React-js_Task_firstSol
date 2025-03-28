@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom';
 function  SignUp() {
   return (
     <>
-   <div className="flex flex-col items-center justify-center min-h-screen ">
-      <div className=" bg-white p-4 rounded-lg shadow-md  border-2">
-        <img src={Group} alt="Logo" width={250} className="mx-auto mb-4" />
+
+    
+     <div className="flex items-center justify-center min-h-screen  p-4">
+          <div className="w-full max-w-sm p-4 bg-white shadow-lg rounded-xl border-2">
+          <img src={Group} alt="Logo" width={250} className="mx-auto mb-4" />
         <form>
 
         <div className="w-96 mb-2 text-left ">
@@ -53,9 +55,12 @@ function  SignUp() {
           <button className="w-full mt-2 bg-[#D5BE76] text-white py-2 rounded-lg transition 
           border-2 border-transparent hover:border-blue-500 focus:border-blue-500">
          Sign Up
+        
           </button>
-
-        <p className="fixed bottom-4 left-0 w-full text-center text-gray-500">
+         
+       
+        </form>
+        <p className="text-center text-gray-500 mt-24">
                <Link to="/" className="text-[#D5BE76] hover:underline ml-1" aria-label="Sign In">
           Sign in
         </Link> 
@@ -64,10 +69,8 @@ function  SignUp() {
         Sign Up
      </Link>
          </p>
-        
-        </form>
-      </div>
-    </div>
+          </div>
+        </div>
     </>
   )
 }
