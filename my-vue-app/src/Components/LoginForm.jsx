@@ -30,14 +30,14 @@ function LoginForm() {
           />
 
           <div className="text-right mt-2">
-            <a href="#" className="text-blue-500 text-sm hover:underline" aria-label="Forgot Password">
-              Forgot Password?
-            </a>
+          <Link to="/ForgetPassword" className="text-blue-500 text-sm hover:underline">
+        Forgot Password?
+      </Link>
           </div>
 
           <button
             type="submit"
-            className="w-full mt-24  bg-[#D5BE76]  text-white py-2 rounded-lg  transition duration-300"
+            className="w-full mt-24  bg-[#D5BE76] text-white py-2 rounded-lg transition border-2 border-transparent hover:border-blue-500 focus:border-blue-500"
           >
             Login
           </button>
