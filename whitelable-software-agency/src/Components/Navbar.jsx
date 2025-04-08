@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logoImage from "../assets/logoImage.png";
+import logoImage from "../assets/Components/logoImage.png";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
