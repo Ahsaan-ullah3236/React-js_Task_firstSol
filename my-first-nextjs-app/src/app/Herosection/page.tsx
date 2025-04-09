@@ -1,4 +1,5 @@
 "use client";
+// import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
 function Herosection() {
@@ -22,7 +23,7 @@ function Herosection() {
       const timeout = setTimeout(() => {
         setDisplayText((prev) => prev + currentWord[letterIndex]);
         setLetterIndex((prev) => prev + 1);
-      }, 100); // Faster, more professional typing
+      }, 100);
 
       return () => clearTimeout(timeout);
     } else {
@@ -30,11 +31,13 @@ function Herosection() {
         setLetterIndex(0);
         setDisplayText("");
         setWordIndex((prev) => (prev + 1) % words.length);
-      }, 1200); // Longer pause after word is complete
+      }, 1200); 
 
       return () => clearTimeout(pause);
     }
   }, [letterIndex, wordIndex]);
+  
+  
 
   return (
     <>
@@ -47,7 +50,7 @@ function Herosection() {
             <div className="text-[#00D280] text-[42px] md:text-[80px] lg:text-[44px] font-bold font-aleo leading-tight transition-all h-[66px]">
               {displayText}
             </div>
-            <p className=" font-semibold md:text-base text-[#070707]">
+            <p className=" font-meduim md:text-xl text-[#070707]">
               Unlock your digital potential with our tailored solutions. Discover how we can elevate your online presence and drive lasting success.
             </p>
             <div className="mt-12 font-bold pt-6 flex gap-4">
@@ -80,6 +83,7 @@ function Herosection() {
             <img src="https://kavelogics.com/landing/clients/opstion.svg" alt="Logo 4" className="w-28 mx-16" />
           </div>
         </div>
+
     </>
   );
 }

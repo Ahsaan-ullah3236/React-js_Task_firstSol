@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Herosection from "./Herosection/page";
+import Ourservices from "./Ourservices/page";
 
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
    <>
     <Navbar/>
     <Herosection/>
+    <Ourservices/>
    </>
   );
 }
