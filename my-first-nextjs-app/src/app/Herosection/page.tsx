@@ -38,7 +38,7 @@ function Herosection() {
 
   return (
     <>
-      <div className= "border-2 border-red-400 w-full h-full pb-12 flex flex-col md:flex-row justify-center items-center min-h-[200px]">
+      <div className= " w-full h-full pb-12 flex flex-col md:flex-row justify-center items-center min-h-[200px]">
         <div className="w-[90%] mt-2 flex flex-col md:flex-row items-center justify-between gap-2">
           <div className="flex flex-col gap-4 max-w-xl w-full">
             <h1 className="text-[#070707] text-[40px] md:text-[36px] lg:text-[44px] font-bold font-aleo leading-tight whitespace-nowrap">
@@ -60,7 +60,7 @@ function Herosection() {
             </div>
           </div>
 
-          <div className="border-2 border-amber-700 max-s-lg w-full overflow-hidden transform transition-transform duration-500 hover:scale-105">
+          <div className=" max-s-lg w-full overflow-hidden transform transition-transform duration-500 hover:scale-105">
             <img src="/image.png" alt="Hero Illustration" className="w-full h-auto object-cover" />
           </div>
         </div>
