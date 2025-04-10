@@ -4,6 +4,7 @@ import Ourservices from "./Ourservices/page";
 import ClientsLine from "./clientsline/page";
 import Topchoice from "./Topchoice/page"
 import Ourprocess from "./Ourprocess/page"
+// import Innovation from "./Innovation/page"
 
 
 
@@ -16,6 +17,7 @@ export default function Home() {
     <ClientsLine/>
     <Topchoice/>
     <Ourprocess/>
+    {/* <Innovation/> */}
     
    </>
   );
