@@ -127,7 +127,7 @@ function Ourservices() {
             <img
               src={image}
               alt={title}
-              className="w-full h-[450px] object-cover opacity-80"
+              className="w-full h-[550px] object-cover opacity-80"
             />
 
             <div className="absolute inset-0 flex flex-col items-start justify-center text-white px-10 py-12 space-y-6  bg-opacity-50">
