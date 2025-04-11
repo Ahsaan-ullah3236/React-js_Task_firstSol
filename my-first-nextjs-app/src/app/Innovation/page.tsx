@@ -1,46 +1,117 @@
-// "use client"
-// import React, { useState } from 'react';
+"use client";
+import React from "react";
 
-// function Innovation() {
-//   const [activeTab, setActiveTab] = useState("Frontend");
+const technologiesRow1 = [
+  { name: "React", icon: "https://kavelogics.com/landing/technologies/react.svg" },
+  { name: "JavaScript", icon: "https://kavelogics.com/landing/technologies/js.svg" },
+  { name: "TypeScript", icon: "https://kavelogics.com/landing/technologies/ts.svg" },
+  { name: "Android", icon: "https://kavelogics.com/landing/technologies/android.svg" },
+  { name: "TypeScript", icon: "https://kavelogics.com/landing/technologies/ts.svg" },
+];
 
-//   const technologies = {
-//     Frontend: ['React', 'Vue', 'Tailwind CSS'],
-//     Backend: ['Node.js', 'Django', 'Spring Boot'],
-//     DevOps: ['Docker', 'Kubernetes', 'GitHub Actions']
-//   };
+const technologiesRow2 = [
+  { name: "Node.js", icon: "https://kavelogics.com/landing/technologies/flutter.svg" },
+  { name: "Express", icon: "https://kavelogics.com/landing/technologies/flutter.svg" },
+  { name: "NestJS", icon: "https://kavelogics.com/landing/technologies/electron.svg" },
+  { name: "MongoDB", icon: "https://kavelogics.com/landing/technologies/angular.svg" },
+  { name: "PostgreSQL", icon: "https://kavelogics.com/landing/technologies/wordpress.svg" },
+];
 
-//   return (
-//     <section className="flex justify-center px-4 py-10 bg-white border-2 border-green-300">
-//       <div className="border-2 border-black w-full max-w-4xl rounded-xl p-6 bg-gray-50 shadow-lg">
-//         <div className="text-center mb-8">
-//           <h1 className="text-4xl font-bold text-gray-800 mb-4">
-//             Technologies We Use for Innovation
-//           </h1>
-//           <p className="text-gray-600 text-lg">
-//             These are the latest tools we evaluate to build top-tier IT solutions tailored for you.
-//           </p>
-//         </div>
+const technologiesRow3 = [
+  { name: "Docker", icon: "https://kavelogics.com/landing/technologies/next.svg" },
+  { name: "Kubernetes", icon: "https://kavelogics.com/landing/technologies/django.svg" },
+  { name: "AWS", icon: "https://kavelogics.com/landing/technologies/svelte.svg" },
+  { name: "Jenkins", icon: "https://kavelogics.com/landing/technologies/vue.svg" },
+  { name: "Terraform", icon: "https://kavelogics.com/landing/technologies/flask.svg" },
+];
 
-//         {/* Buttons */}
-//         <div className="flex flex-col items-center border-t border-gray-200 pt-6 bg-[#00D280]">
-//           <div className="flex gap-4 justify-center flex-nowrap overflow-x-auto px-2">
-//             {Object.keys(technologies).map((tab) => (
-//               <button key={tab} onClick={() => setActiveTab(tab)} className={`px-6 py-2 rounded-full shadow transition text-black bg-[#c3eef977]`}> {tab} </button> ))}
-//           </div>
-//         </div>
+const buttonTabs = ["Frontend", "Backend", "DevOps"];
 
-//         {/* Tech list */}
-//         <div className="mt-8 text-center">
-//           <h2 className="text-2xl font-semibold text-gray-700 mb-4">{activeTab} Tools</h2>
-//           <ul className="flex flex-wrap justify-center gap-4 text-gray-700 text-lg">
-//             {technologies[activeTab].map((tech) => (
-//               <li key={tech} className="bg-white px-4 py-2 rounded-lg border shadow-sm hover:shadow-md transition"> {tech}</li> ))}
-//           </ul>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
+export default function Innovation() {
+  return (
+    <section className=" min-h-screen flex justify-center items-center bg-white">
+      <div className="w-full h-[70vh] max-w-7xl">
+        {/* Heading */}
+        <div className="text-center mb-22">
+          <h1 className="text-6xl font-bold text-gray-800 mb-12">
+            Technologies We Use for Innovation
+          </h1>
+          <p className="text-gray-600 text-bold  text-3xl mx-auto">
+          The following are the most recent tools we evaluate while creating the best IT solutions for you!
 
-// export default Innovation;
+
+          </p>
+        </div>
+
+        {/* Tab Buttons */}
+        <div className="second-inner-div rounded-2xl bg-[#72dbf56b] h-[65vh] pt-12">
+        <div className="flex justify-center mb-8">
+          <div className="flex gap-8 bg-[#62d3ef6b] px-12 py-4 rounded-full border border-[#00D280]">
+            {buttonTabs.map((tab, index) => (
+              <button
+                key={index}
+                className={`text-bold px-18 py-2 rounded-full transition font-medium cursor-pointer  ${
+                  tab === "Frontend"
+                    ? "bg-[#00D280] text-white shadow text-2xl py-4"
+                    : " text-gray-800 text-2xl p-4"
+                }`}
+              >
+                {tab}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Technology Grid */}
+        <div className="grid grid-cols-1 gap-6">
+          <div className="flex justify-center flex-wrap gap-8">
+            {technologiesRow1.map((tech, index) => (
+              <div
+                key={`1-${index}`}
+                className="flex flex-col items-center w-34 text-center m-6"
+              >
+                <img
+                  src={tech.icon}
+                  alt={tech.name}
+                  className="w-18 h-18 object-contain mb-6 "
+                />
+                <p className="text-bold font-bold text-gray-700">{tech.name}</p>
+              </div>
+            ))}
+          </div>
+          <div className="flex justify-center flex-wrap gap-8">
+            {technologiesRow2.map((tech, index) => (
+              <div
+                key={`2-${index}`}
+                className="flex flex-col items-center w-34 text-center m-6"
+              >
+                <img
+                  src={tech.icon}
+                  alt={tech.name}
+                  className="w-18 h-18 object-contain mb-6"
+                />
+                <p className="text-bold font-bold text-gray-700">{tech.name}</p>
+              </div>
+            ))}
+          </div>
+          <div className="flex justify-center flex-wrap gap-8">
+            {technologiesRow3.map((tech, index) => (
+              <div
+                key={`3-${index}`}
+                className="flex flex-col items-center w-34 text-center m-6"
+              >
+                <img
+                  src={tech.icon}
+                  alt={tech.name}
+                  className="w-18 h-18 object-cover mb-6"
+                />
+                <p className="text-bold font-bold text-gray-700">{tech.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+  );
+}
