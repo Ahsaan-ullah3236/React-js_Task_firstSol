@@ -1,5 +1,7 @@
 "use client";
+import Image from "next/image";
 import React from "react";
+
 
 const technologiesRow1 = [
   { name: "React", icon: "https://kavelogics.com/landing/technologies/react.svg" },
@@ -70,7 +72,7 @@ export default function Innovation() {
                 key={`1-${index}`}
                 className="flex flex-col items-center w-34 text-center m-6"
               >
-                <img
+                <Image
                   src={tech.icon}
                   alt={tech.name}
                   className="w-18 h-18 object-contain mb-6 "
@@ -85,7 +87,7 @@ export default function Innovation() {
                 key={`2-${index}`}
                 className="flex flex-col items-center w-34 text-center m-6"
               >
-                <img
+                <Image
                   src={tech.icon}
                   alt={tech.name}
                   className="w-18 h-18 object-contain mb-6"
@@ -100,7 +102,7 @@ export default function Innovation() {
                 key={`3-${index}`}
                 className="flex flex-col items-center w-34 text-center m-6"
               >
-                <img
+                <Image
                   src={tech.icon}
                   alt={tech.name}
                   className="w-18 h-18 object-cover mb-6"
