@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from "next/image";
 
 function page() {
   return (
@@ -25,7 +26,7 @@ function page() {
                     className="relative group w-[450px] h-[400px] overflow-hidden shadow-lg"
                   >
                     {/* Image with lower opacity */}
-                    <img
+                    <Image
                       src={images[imgIndex]}
                       alt=""
                       className="w-full h-full object-cover opacity-75 transition-transform duration-500 group-hover:scale-105"
