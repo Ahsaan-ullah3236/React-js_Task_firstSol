@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from "next/image";
 
 function page() {
   return (
@@ -59,7 +60,7 @@ function page() {
       ].map((card, index) => (
         <div key={index} className="border border-gray-200 rounded-xl p-12 shadow-md bg-[#c3eef977]  ">
           <div className="flex items-center gap-4">
-            <img
+            <Image
               src={card.icon}
               alt={`${card.title} Icon`}
               className="w-10 h-14"
